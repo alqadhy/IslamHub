@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Inter, Cairo, Amiri } from "next/font/google";
 
 // Main CSS File
-// import "./globals.css";
+import "../styles/index.css";
 
 const inter = Inter({
   variable: "--font-inter",
