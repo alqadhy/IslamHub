@@ -22,3 +22,9 @@ export interface HijriDate {
   };
   day: string;
 }
+
+export interface Qibla {
+  latitude: number;
+  longitude: number;
+  direction: number;
+}

@@ -9,3 +9,4 @@ export * from "./ui/settings.types";
 // API Types
 export * from "./api/quran-api.types";
 export * from "./api/hadith-api.types";
+export * from "./api/prayer-api.types";
