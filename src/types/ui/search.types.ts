@@ -1,6 +1,6 @@
 export interface SearchResults<T> {
   count: number;
-  results: Array<T>;
+  results: T;
 }
 
 export interface AyahResult {

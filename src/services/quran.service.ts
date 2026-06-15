@@ -119,7 +119,7 @@ class QuranService {
   async searchAyahs(
     lang: "ar" | "en",
     query: string,
-  ): Promise<SearchResults<AyahResult>> {
+  ): Promise<SearchResults<AyahResult[]>> {
     const endpoint = lang === "ar" ? "quran-simple-clean" : "en.sahih";
     const response = await this.apiClient.get(
       `/search/${encodeURIComponent(query)}/all/${endpoint}`,
