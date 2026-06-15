@@ -6,11 +6,15 @@ export class APIClient {
   }
 
   async get(endpoint: string) {
-    const response = await fetch(this.baseURL + endpoint);
+    try {
+      const response = await fetch(this.baseURL + endpoint);
 
-    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
 
-    return response.json();
+      return response.json();
+    } catch (error) {
+      throw error;
+    }
   }
 
   async post(endpoint: string, data: unknown) {}
