@@ -10,13 +10,21 @@ export interface Surah {
 export interface Ayah {
   id: number;
   surahNumber: number;
+  surahArabicName: string;
+  surahEnglishName: string;
   numberInSurah: number;
   arabicText: string;
   englishText: string;
   juz: number;
   page: number;
   isSajda: boolean;
-  audio?: string;
+}
+
+export interface AyahAudio {
+  id: number;
+  surahArabicName: string;
+  surahEnglishName: string;
+  audio: string;
 }
 
 export interface SurahDetails {

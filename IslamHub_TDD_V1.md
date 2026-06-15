@@ -237,13 +237,14 @@ Endpoints:-
 | `/ayah/{ayahNumber}/editions/quran-uthmani,en.sahih`   | GET a specific Ayah in AR and EN                      |
 | `/surah`                                               | GET all Surahs                                        |
 | `/surah/{surahNumber}/editions/quran-uthmani,en.sahih` | GET all Ayahs of a specific Surah in AR and EN        |
+| `/ayah/{ayahNumber}/ar.minshawi`                       | GET playable audio URL of a specific Ayah             |
 | `/surah/{surahNumber}/ar.minshawi`                     | GET all playable Ayahs audio URLs of a specific Surah |
 | `/search/{querey}/all/quran-simple-clean`              | GET all matching Ayahs in AR                          |
 | `/search/{querey}/all/en.sahih`                        | GET all matching Ayahs in EN                          |
 
 #### Hadith API
 
-Base URL: `https://www.hadithapi.com/api/`
+Base URL: `https://www.hadithapi.com/api`
 API Key: `$2y$10$0fK8GxfQWlnnrxU1UBEyeVGkmmXQlJXYU9ndROylSdLTKOfErS`
 
 Endpoints:-

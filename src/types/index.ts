@@ -1,5 +1,10 @@
-export * from "./quran.types";
-export * from "./hadith.types";
-export * from "./prayer.types";
-export * from "./favorites.types";
-export * from "./settings.types";
+// UI Types
+export * from "./ui/quran.types";
+export * from "./ui/hadith.types";
+export * from "./ui/prayer.types";
+export * from "./ui/search.types";
+export * from "./ui/favorites.types";
+export * from "./ui/settings.types";
+
+// API Types
+export * from "./api/quran-api.types";
